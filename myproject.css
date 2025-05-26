@@ -1,0 +1,66 @@
+body {
+        color: white;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .principal {
+        padding: 0px 50px; /*em cima 0px lados 50px*/
+      }
+      ul {
+        display: flex;
+        justify-content: space-between; /*espaço restante igualmente ENTRE os itens.*/
+        list-style: none; /*Retirar a bolinha da lista*/
+        align-items: center;
+        padding: 16px;
+      }
+      li:hover {
+        transform: scale(1.2); /*Movimento*/
+      }
+      nav a:hover { /*Mudar a cor qnd o mause estiver em cima*/
+        color: lab(29.9% 24.25 -27.22);
+      }
+      a {
+        color: white;
+        text-decoration: none; /*retirar a linhas do link*/
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid hsl(300, 91%, 18%);
+        box-shadow: 0 0 40px #53015780; /*Adicionar sombra na img*/
+      }
+      .foto {
+        text-align: center;
+      }
+      h1 {
+        color: purple;
+      }
+      .git {
+        width: 40px;
+        height: 40px;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+      }
+      footer img {
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        gap: 20px;
+      }
+      footer a {
+        margin: 20px;
+        text-align: center;
+      }
+      footer p {
+        font-size: 10px;
+        color: #9681aa;
+      }
+      .foto img:hover {
+      transform: scale(1.1); /* aumenta levemente a imagem */
+      }
+      footer img:hover{
+      transform: scale(1.1); /* aumenta levemente a imagem */
+      }
