@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        color: white;
+        background-color: black;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .principal {
+        padding: 0px 50px; /*em cima 0px lados 50px*/
+      }
+      ul {
+        display: flex;
+        justify-content: space-between; /*espaço restante igualmente ENTRE os itens.*/
+        list-style: none; /*Retirar a bolinha da lista*/
+        align-items: center;
+        padding: 16px;
+      }
+      li:hover {
+        transform: scale(1.2); /*Movimento*/
+      }
+      nav a:hover { /*Mudar a cor qnd o mause estiver em cima*/
+        color: lab(29.9% 24.25 -27.22);
+      }
+      a {
+        color: white;
+        text-decoration: none; /*retirar a linhas do link*/
+      }
+      img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 5px solid hsl(300, 91%, 18%);
+        box-shadow: 0 0 40px #53015780; /*Adicionar sombra na img*/
+      }
+      .foto {
+        text-align: center;
+      }
+      h1 {
+        color: purple;
+      }
+      .git {
+        width: 40px;
+        height: 40px;
+      }
+      footer {
+        display: flex;
+        justify-content: center;
+      }
+      footer img {
+        width: 40px;
+        height: 40px;
+        border-radius: 30%;
+        gap: 20px;
+      }
+      footer a {
+        margin: 20px;
+        text-align: center;
+      }
+      footer p {
+        font-size: 10px;
+        color: #9681aa;
+      }
+      .foto img:hover {
+      transform: scale(1.1); /* aumenta levemente a imagem */
+      }
+      footer img:hover{
+      transform: scale(1.1); /* aumenta levemente a imagem */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="principal">
+      <nav>
+        <ul>
+          <li><a href="SobreMIm.html">About me</a></li>
+          <li><a href="Project.html">Projects</a></li>
+          <li><a href="Contatos.html">Contacts</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="foto"><img src="myphoto.jpeg" alt="" /></div>
+        <h1>Luana Silva</h1>
+        <h2>Desenvolvedora Front-End</h2>
+      </header>
+      <main>
+        <section>
+          <h3>Sobre Mim</h3>
+          <p>
+            Estou em constante evolução como desenvolvedora Front-End, com foco
+            em HTML, CSS e JavaScript. Iniciei meus estudos no curso de Análise
+            e Desenvolvimento de Sistemas e, desde então, venho criando projetos
+            práticos, explorando boas práticas e aprimorando minhas habilidades.
+            Meu objetivo é desenvolver interfaces bonitas, funcionais e que
+            ofereçam uma boa experiência ao usuário.
+          </p>
+        </section>
+        <section>
+          <h3>Formação</h3>
+          <p>
+            Estou cursando Análise e Desenvolvimento de Sistemas pelo Instituto Federal do Piauí (IFPI).
+          </p>
+        </section>
+
+        <footer>
+          <!-- rodapé -->
+          <a
+            href="https://github.com/LuanaSza"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <!-- Link ser aberto em outra aba -->
+            <img src="logoroxa.jpg" alt="" />
+            <p>GitHub</p>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/luana-silva-84045a327/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="logolinkedin.webp" alt="" />
+            <p>LInkedIn</p>
+          </a>
+          <a
+            href="https://www.instagram.com/lua.slvz/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="logoinsta.webp" alt="" />
+            <p>Instagram</p>
+          </a>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
